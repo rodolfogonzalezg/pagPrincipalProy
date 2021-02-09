@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "mi_tipografia";
+    src: url("../fonts/OpenSansCondensed-Bold.ttf");
+}
+
+.header {
+    background: url(../img/machuPicchu.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: rgb(0, 0, 0, .3);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 70px;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255, .5);
+    padding: 0 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    background: rgba(124, 187, 240, 0.3);
+    padding: 0px 20px;
+    border-radius: 15px;
+}
+
+.logo a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: "mi_tipografia";
+}
+
+.logo a:hover {
+    color: #343434;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    height: 40px;
+}
+
+.nav a {
+    flex: 1 1 auto;
+    font-family: "mi_tipografia";
+    color: white;
+    font-size: 15px;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #343434;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.social a {
+    font-size: 15px;
+    color: white;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: #343434;
+}
+
+.texto-principal {
+    background: rgba(240, 90, 63, 0.3);
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: "mi_tipografia";
+    font-size: 21px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+@media all and (max-width: 948px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .texto-principal {
+        height: 400px;
+    }
+}
